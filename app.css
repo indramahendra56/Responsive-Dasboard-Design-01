@@ -562,7 +562,9 @@ main .planning .item > i{
         grid-template-columns: 1fr 6fr 5fr;
     }
 
-    .container .left-section, .container main, .container .right-section{
+    .container .left-section,
+    .container main,
+    .container .right-section{
         padding: 20px 20px 0 20px;
     }
 
@@ -574,7 +576,7 @@ main .planning .item > i{
     }
 }
 
-@media screen and(max-width: 992px) {
+@media screen and (max-width: 992px) {
     .container{
         grid-template-columns: 1fr 1fr;
     }
