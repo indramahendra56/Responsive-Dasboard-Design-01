@@ -9,7 +9,7 @@
 
 a{
     text-decoration: none;
-    color: #369fff
+    color: #369FFF;
 }
 
 i{
@@ -30,7 +30,7 @@ i{
     padding: 40px 0;
 }
 
-.container .left-section .logo {
+.container .left-section .logo{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -45,16 +45,16 @@ i{
 .container .left-section .logo a{
     font-weight: 800;
     font-size: 20px;
-    color: #40a1fc;
+    color: #006ED3;
 }
 
-.menu-btn {
+.menu-btn{
     width: 32px;
     height: 32px;
     align-items: center;
     justify-content: center;
     border: none;
-    background-color: #D1e6f9;
+    background-color: #D1E6F9;
     border-radius: 6px;
     cursor: pointer;
     display: none;
@@ -116,7 +116,7 @@ i{
     height: 8px;
 }
 
-.container .left-section .pic img{
+.container .left-section .pic  img{
     width: 160px;
 }
 
@@ -143,8 +143,8 @@ i{
 }
 
 main{
-    border-right: 2px solid #f0f0f0;
-    border-left: 2px solid #f0f0f0;
+    border-right: 2px solid #F0F0F0;
+    border-left: 2px solid #F0F0F0;
     padding: 40px 40px 0 40px;
 }
 
@@ -172,35 +172,35 @@ main .separator .info{
     align-items: center;
     gap: 30px;
 }
- main .separator .info h3{
-    font-size: 30px;
- }
 
- main .separator .info a{
+main .separator .info h3{
+    font-size: 30px;
+}
+
+main .separator .info a{
     margin-top: 6px;
     font-size: 14px;
- }
+}
 
- main .separator .search{
+main .separator .search{
     display: flex;
     align-items: center;
     gap: 14px;
- }
+}
 
- main .separator .search i{
+main .separator .search i{
     font-size: 20px;
     color: #BDBDBD;
-    cursor: pointer;
- }
+}
 
- main .separator .search input{
+main .separator .search input{
     border: none;
     font-size: 14px;
     width: 80px;
     outline: none;
- }
+}
 
-main .separator .search input:placeholder{
+main .separator .search input::placeholder{
     color: #BDBDBD;
 }
 
@@ -231,11 +231,10 @@ main .analytics .item .progress .info h5{
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 main .analytics .item .progress .info p{
-    color: #FFF;
+    color: #fff;
     font-size: 12px;
 }
 
@@ -250,19 +249,23 @@ main .analytics .item .progress .progress-bar{
 }
 
 main .analytics .item:nth-child(1) .progress .progress-bar{
-    background: radial-gradient(closest-side, #006ED3 79%, transparent 80% 100%), conic-gradient(#208BEE 25%, #fff 0%);
+    background: radial-gradient(closest-side, #006ED3 79%, transparent 80% 100%),
+    conic-gradient(#208BEE 25%, #fff 0%);
 }
 
 main .analytics .item:nth-child(2) .progress .progress-bar{
-    background: radial-gradient(closest-side, #ff993A 79%, transparent 80% 100%), conic-gradient(#FF7E07 50%, #fff 0%);
+    background: radial-gradient(closest-side, #FF993A 79%, transparent 80% 100%),
+    conic-gradient(#FF7E07 50%, #fff 0%);
 }
 
 main .analytics .item:nth-child(3) .progress .progress-bar{
-    background: radial-gradient(closest-side, #8AC53E 79%, transparent 80% 100%), conic-gradient(#6EB33D 75%, #fff 0%);
+    background: radial-gradient(closest-side, #8AC53E 79%, transparent 80% 100%),
+    conic-gradient(#6EB33D 75%, #fff 0%);
 }
 
 main .analytics .item:nth-child(4) .progress .progress-bar{
-    background: radial-gradient(closest-side, #FFD043 79%, transparent 80% 100%), conic-gradient(#FFC000 25%, #fff 0%);
+    background: radial-gradient(closest-side, #FFD043 79%, transparent 80% 100%),
+    conic-gradient(#FFC000 25%, #fff 0%);
 }
 
 main .analytics .item .progress .progress-bar::before{
@@ -272,15 +275,15 @@ main .analytics .item .progress .progress-bar::before{
 
 main .analytics .item:nth-child(1) .progress .progress-bar::before,
 main .analytics .item:nth-child(4) .progress .progress-bar::before{
-    content: '75%';
+    content: "75%";
 }
 
 main .analytics .item:nth-child(2) .progress .progress-bar::before{
-    content: '50%';
+    content: "50%";
 }
 
 main .analytics .item:nth-child(3) .progress .progress-bar::before{
-    content: '25%';
+    content: "25%";
 }
 
 main .analytics .item i{
@@ -289,19 +292,19 @@ main .analytics .item i{
 }
 
 main .analytics .item:nth-child(1){
-    background: #006ed3;
+    background: #006ED3;
 }
 
 main .analytics .item:nth-child(2){
-    background: #ff993a
+    background: #FF993A;
 }
 
 main .analytics .item:nth-child(3){
-    background: #8ac53e;
+    background: #8AC53E;
 }
 
 main .analytics .item:nth-child(4){
-    background: #ffd043;
+    background: #FFD043;
 }
 
 main .separator input{
@@ -312,7 +315,7 @@ main .separator input{
     width: 100px;
 }
 
-input[type="date"]::-webkit-calender-picker-indicator{
+input[type="date"]::-webkit-calendar-picker-indicator{
     opacity: 0.5;
     font-size: 16px;
     cursor: pointer;
@@ -329,9 +332,12 @@ main .planning .item{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
+    background-color: #F7F7F7;
+    border-radius: 20px;
 }
 
-main .item .left{
+main .planning .item .left{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -347,7 +353,7 @@ main .planning .item .left .icon{
 }
 
 main .planning .item:nth-child(1) .left .icon{
-    background: #D1e6f9;
+    background: #D1E6F9;
 }
 
 main .planning .item:nth-child(1) .left .icon i{
@@ -355,27 +361,27 @@ main .planning .item:nth-child(1) .left .icon i{
 }
 
 main .planning .item:nth-child(2) .left .icon{
-    background: #f8e5d2;
+    background: #F9E5D2;
 }
 
 main .planning .item:nth-child(2) .left .icon i{
-    color: #ff993a;
+    color: #FF993A;
 }
 
 main .planning .item:nth-child(3) .left .icon{
-    background: #e2edd2;
+    background: #E2EDD2;
 }
 
 main .planning .item:nth-child(3) .left .icon i{
-    color: #8ac53e;
+    color: #8AC53E;
 }
 
 main .planning .item:nth-child(4) .left .icon{
-    background: #f9f0d3;
+    background: #F9F0D3;
 }
 
 main .planning .item:nth-child(4) .left .icon i{
-    color: #ffd143;
+    color: #FFD143;
 }
 
 main .planning .item .left .details h5{
@@ -399,7 +405,7 @@ main .planning .item > i{
 .container .right-section .top{
     display: flex;
     align-items: center;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
 
 .container .right-section .top > i{
@@ -413,7 +419,7 @@ main .planning .item > i{
     width: 8px;
     height: 8px;
     position: absolute;
-    background: #eb5757;
+    background: #EB5757;
     border-radius: 50%;
     right: 0;
 }
@@ -423,7 +429,7 @@ main .planning .item > i{
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background: #ebf6ff;
+    background: #EBF6FF;
     width: 244px;
     height: 60px;
     border-radius: 16px;
@@ -490,7 +496,7 @@ main .planning .item > i{
 
 .container .right-section .stats .top p{
     font-size: 16px;
-    color: #8ea3b7;
+    color: #8EA3B7;
     font-weight: 500;
 }
 
@@ -509,7 +515,7 @@ main .planning .item > i{
 
 .container .right-section .stats .item .bottom h3{
     font-size: 40px;
-    color: #006ed3;
+    color: #006ED3;
 }
 
 .container .right-section .weekly{
@@ -519,7 +525,7 @@ main .planning .item > i{
     justify-content: space-between;
     width: 100%;
     padding: 12px;
-    background: #f7f7f7;
+    background: #F7F7F7;
     border-radius: 16px;
 }
 
@@ -532,7 +538,7 @@ main .planning .item > i{
 .container .right-section .weekly .title .line{
     width: 6px;
     height: 50px;
-    background: #000ed3;
+    background: #006ED3;
     border-radius: 20px;
 }
 
@@ -547,7 +553,8 @@ main .planning .item > i{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: radial-gradient(closest-side, #f7f7f7 79%, transparent 80% 100%), conic-gradient(#ccc 25%, #006ED3 0%);
+    background: radial-gradient(closest-side, #f7f7f7 79%, transparent 80% 100%),
+    conic-gradient(#CCC 25%, #006ED3 0%);
 }
 
 .container .right-section .weekly .progress-bar::before{
@@ -568,16 +575,17 @@ main .planning .item > i{
         padding: 20px 20px 0 20px;
     }
 
-    .container .left-section .logo a, 
-    .container .left-section .sidebar a, 
+    .container .left-section .logo a,
+    .container .left-section .sidebar a,
     .container .left-section .pic img,
     .container .left-section .upgrade{
         display: none;
     }
+
 }
 
 @media screen and (max-width: 992px) {
-
+    
     .container{
         grid-template-columns: 1fr 1fr;
     }
@@ -586,7 +594,7 @@ main .planning .item > i{
         position: fixed;
         height: 60vh;
         background-color: #fff;
-        box-shadow: 0 40px 30px rgba(0, 0 , 0, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
         top: -60vh;
     }
@@ -609,12 +617,17 @@ main .planning .item > i{
         gap: 15px;
     }
 
-    main .separator .info h3, .container .right-section .separator h4{
+    main .separator .info h3,
+    .container .right-section .separator h4{
         font-size: 20px;
     }
 
     main .analytics .item{
         min-width: 160px;
+    }
+
+    main .analytics .item i{
+        display: none;
     }
 
     main .planning{
@@ -638,6 +651,7 @@ main .planning .item > i{
     .container .right-section .stats .item .bottom h3{
         font-size: 36px;
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -659,5 +673,5 @@ main .planning .item > i{
     .container .right-section .weekly{
         margin-bottom: 20px;
     }
-}
 
+}
