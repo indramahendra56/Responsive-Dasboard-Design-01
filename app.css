@@ -577,6 +577,7 @@ main .planning .item > i{
 }
 
 @media screen and (max-width: 992px) {
+
     .container{
         grid-template-columns: 1fr 1fr;
     }
@@ -595,7 +596,7 @@ main .planning .item > i{
         gap: 20px;
     }
 
-    .container .left-section .logo .menu,
+    .container .left-section .logo .menu-btn,
     main header .menu-btn{
         display: flex;
     }
