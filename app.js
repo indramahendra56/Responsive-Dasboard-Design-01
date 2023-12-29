@@ -1,26 +1,25 @@
-const requesPromise = (url) => {
-  return new Promise((resolve, reject) => {
-    const delay = Math.floor(Math.random() * 4500) + 500;
-    setTimeout(() => {
-      if (delay > 3000) {
-        reject("Error.connection Timeout");
-      } else {
-        resolve(`Success: ${url} (${delay}ms)`);
+const menuOpen = document.getElementById('menu-open');
+const menuClose = document.getElementById('menu-close');
+const sideBar = document.querySelector('.container left-section');
+const sideBarItems = document.querySelectorAll('.container .left-section .sidebar .item');
+
+menuOpen.addEventListener('click', () => {
+  sideBar.style.top = '0';
+});
+
+menuClose.addEventListener('click', () => {
+  sideBar.style.top = '-60vh';
+});
+
+let activeItem = sideBarItems[0];
+
+sideBarItems.forEach(element => {
+    element.addEventListener('click', () => {
+      if (activeItem) {
+        activeItem.removeAttribute('id');
       }
-    }, delay);
-  });
-};
 
-async function requestHandler() {
-  try {
-    let result = await requesPromise("movie.com");
-    console.log(result);
-  } catch (error) {
-    console.log("Pesan Error", error);
-  }
-}
-
-// ! allert 'jangan dihapus ya bro'
-// ? ini apaan bro ?
-// TODO iansdinaidnind
-// * iadsinadinadinadin
+      element.setAttribute('id', 'active');
+      activeItem = element;
+    });
+});
